@@ -1,6 +1,6 @@
 extends CanvasLayer
 
-@onready var scroll: ScrollContainer = $DialogBox/ScrollContainer
+@onready var scroll: ScrollContainer = $NinePatchRect/DialogBox/ScrollContainer
 
 @export var base_speed = 120.0
 @export var max_speed = 600.0

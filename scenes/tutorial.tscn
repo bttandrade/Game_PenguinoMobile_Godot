@@ -2,18 +2,14 @@
 
 [ext_resource type="Texture2D" uid="uid://ddqo2iq2t7wcl" path="res://assets/universal/Dialog_Box(16 x 16).png" id="1_koko0"]
 [ext_resource type="FontFile" uid="uid://dx4dbuk0rrfp8" path="res://assets/fonts/RevMiniPixel.ttf" id="2_lsb8r"]
+[ext_resource type="Texture2D" uid="uid://boxm0pbakpbvr" path="res://assets/others/ui/x.png" id="2_nlqja"]
 [ext_resource type="Texture2D" uid="uid://ciugncameleia" path="res://assets/others/ui/left.png" id="3_ap3ea"]
 [ext_resource type="Texture2D" uid="uid://bo6kqqh7ycni2" path="res://assets/others/ui/right.png" id="4_t6ver"]
-[ext_resource type="Texture2D" uid="uid://bddce5waqc2dk" path="res://assets/others/ui/a.png" id="5_2nb4t"]
-[ext_resource type="Texture2D" uid="uid://4kpbmikaduqw" path="res://assets/others/ui/d.png" id="6_jb51l"]
 [ext_resource type="Texture2D" uid="uid://k3hqeelgjqpw" path="res://assets/others/ui/up.png" id="7_dxsep"]
-[ext_resource type="Texture2D" uid="uid://bbt3a8lhhpr8b" path="res://assets/others/ui/enter.png" id="7_lsb8r"]
-[ext_resource type="Texture2D" uid="uid://b4nox04euj851" path="res://assets/others/ui/w.png" id="8_lexqi"]
-[ext_resource type="Texture2D" uid="uid://c5rufaqpoag3k" path="res://assets/others/ui/space.png" id="9_pkgwa"]
+[ext_resource type="Texture2D" uid="uid://c4rickhkxmiwa" path="res://assets/others/ui/pause.png" id="8_0epgs"]
+[ext_resource type="Texture2D" uid="uid://c5plkvq84osso" path="res://assets/others/ui/resume.png" id="9_g2equ"]
+[ext_resource type="Texture2D" uid="uid://brsxvjd01cjys" path="res://assets/others/ui/home.png" id="10_0epgs"]
 [ext_resource type="Texture2D" uid="uid://0gy04nd0rdn" path="res://assets/others/ui/down.png" id="10_radxo"]
-[ext_resource type="Texture2D" uid="uid://cjiojshg6fgpw" path="res://assets/others/ui/s.png" id="11_1cu4j"]
-[ext_resource type="Texture2D" uid="uid://dr7ednucbgot8" path="res://assets/others/ui/e.png" id="12_djl3p"]
-[ext_resource type="Texture2D" uid="uid://da08vg075qi3b" path="res://assets/others/ui/esc.png" id="13_73805"]
 
 [node name="Tutorial" type="CanvasLayer" unique_id=1583732572]
 
@@ -28,9 +24,9 @@ color = Color(0, 0, 0, 0.19607843)
 
 [node name="DialogBox" type="MarginContainer" parent="." unique_id=1291638370]
 offset_left = 48.0
-offset_top = 32.0
+offset_top = 24.0
 offset_right = 240.0
-offset_bottom = 168.0
+offset_bottom = 152.0
 mouse_filter = 2
 
 [node name="NinePatchRect" type="NinePatchRect" parent="DialogBox" unique_id=2015232254]
@@ -42,148 +38,118 @@ patch_margin_top = 4
 patch_margin_right = 4
 patch_margin_bottom = 4
 
-[node name="Labels" type="Control" parent="." unique_id=1939310920]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="TouchScreenButton" type="TouchScreenButton" parent="DialogBox" unique_id=1519755189]
+position = Vector2(168, 8)
+texture_normal = ExtResource("2_nlqja")
+texture_pressed = ExtResource("2_nlqja")
+action = "ui_cancel"
+
+[node name="Labels" type="Control" parent="DialogBox" unique_id=1939310920]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
 mouse_filter = 2
 
-[node name="Label" type="Label" parent="Labels" unique_id=977722894]
+[node name="Label2" type="Label" parent="DialogBox/Labels" unique_id=1258524821]
 layout_mode = 0
-offset_left = 70.0
-offset_top = 44.0
-offset_right = 262.0
-offset_bottom = 52.0
+offset_left = 40.0
+offset_top = 8.0
+offset_right = 114.0
+offset_bottom = 24.0
 theme_override_colors/font_color = Color(0, 0.54509807, 0.81960785, 1)
 theme_override_colors/font_outline_color = Color(0.11764706, 0.11764706, 0.11764706, 1)
 theme_override_constants/outline_size = 3
 theme_override_fonts/font = ExtResource("2_lsb8r")
 theme_override_font_sizes/font_size = 8
-text = "   : INTERAGIR / AVANÇAR DIÁLOGO"
+text = " : IR PARA OS LADOS"
 vertical_alignment = 1
 
-[node name="Label2" type="Label" parent="Labels" unique_id=1258524821]
+[node name="Label3" type="Label" parent="DialogBox/Labels" unique_id=323958755]
 layout_mode = 0
-offset_left = 118.0
-offset_top = 68.0
-offset_right = 310.0
-offset_bottom = 76.0
+offset_left = 24.0
+offset_top = 56.0
+offset_right = 89.0
+offset_bottom = 72.0
 theme_override_colors/font_color = Color(0, 0.54509807, 0.81960785, 1)
 theme_override_colors/font_outline_color = Color(0.11764706, 0.11764706, 0.11764706, 1)
 theme_override_constants/outline_size = 3
 theme_override_fonts/font = ExtResource("2_lsb8r")
 theme_override_font_sizes/font_size = 8
-text = "   : IR PARA OS LADOS"
+text = " : PULAR / NADAR"
 vertical_alignment = 1
 
-[node name="Label3" type="Label" parent="Labels" unique_id=323958755]
+[node name="Label4" type="Label" parent="DialogBox/Labels" unique_id=73376874]
 layout_mode = 0
-offset_left = 135.0
-offset_top = 92.0
-offset_right = 327.0
-offset_bottom = 100.0
+offset_left = 24.0
+offset_top = 32.0
+offset_right = 63.0
+offset_bottom = 48.0
 theme_override_colors/font_color = Color(0, 0.54509807, 0.81960785, 1)
 theme_override_colors/font_outline_color = Color(0.11764706, 0.11764706, 0.11764706, 1)
 theme_override_constants/outline_size = 3
 theme_override_fonts/font = ExtResource("2_lsb8r")
 theme_override_font_sizes/font_size = 8
-text = "   : PULAR / NADAR"
+text = " : ABAIXAR"
 vertical_alignment = 1
 
-[node name="Label4" type="Label" parent="Labels" unique_id=73376874]
+[node name="Label5" type="Label" parent="DialogBox/Labels" unique_id=1934700239]
 layout_mode = 0
-offset_left = 86.0
-offset_top = 116.0
-offset_right = 278.0
-offset_bottom = 124.0
+offset_left = 40.0
+offset_top = 80.0
+offset_right = 134.0
+offset_bottom = 96.0
 theme_override_colors/font_color = Color(0, 0.54509807, 0.81960785, 1)
 theme_override_colors/font_outline_color = Color(0.11764706, 0.11764706, 0.11764706, 1)
 theme_override_constants/outline_size = 3
 theme_override_fonts/font = ExtResource("2_lsb8r")
 theme_override_font_sizes/font_size = 8
-text = "   : ABAIXAR"
+text = " : PAUSAR / DESPAUSAR"
 vertical_alignment = 1
 
-[node name="Label5" type="Label" parent="Labels" unique_id=1934700239]
+[node name="Label6" type="Label" parent="DialogBox/Labels" unique_id=2005519457]
 layout_mode = 0
-offset_left = 71.0
-offset_top = 140.0
-offset_right = 263.0
-offset_bottom = 148.0
+offset_left = 24.0
+offset_top = 104.0
+offset_right = 118.0
+offset_bottom = 120.0
 theme_override_colors/font_color = Color(0, 0.54509807, 0.81960785, 1)
 theme_override_colors/font_outline_color = Color(0.11764706, 0.11764706, 0.11764706, 1)
 theme_override_constants/outline_size = 3
 theme_override_fonts/font = ExtResource("2_lsb8r")
 theme_override_font_sizes/font_size = 8
-text = "   : RETORNAR / PAUSAR"
+text = " : MENU INICIAL"
 vertical_alignment = 1
 
-[node name="Label6" type="Label" parent="Labels" unique_id=1324663208]
-layout_mode = 0
-offset_left = 183.0
-offset_top = 150.0
-offset_right = 375.0
-offset_bottom = 158.0
-theme_override_colors/font_color = Color(0, 0.54509807, 0.81960785, 1)
-theme_override_colors/font_outline_color = Color(0.11764706, 0.11764706, 0.11764706, 1)
-theme_override_constants/outline_size = 3
-theme_override_fonts/font = ExtResource("2_lsb8r")
-theme_override_font_sizes/font_size = 8
-text = "   : ACEITAR"
-vertical_alignment = 1
-
-[node name="Keys" type="Control" parent="." unique_id=1229196803]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="Keys" type="Control" parent="DialogBox" unique_id=1229196803]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
 mouse_filter = 2
 
-[node name="A" type="Sprite2D" parent="Keys" unique_id=9482476]
-position = Vector2(64, 72)
-texture = ExtResource("5_2nb4t")
-
-[node name="D" type="Sprite2D" parent="Keys" unique_id=760768906]
-position = Vector2(80, 72)
-texture = ExtResource("6_jb51l")
-
-[node name="Down" type="Sprite2D" parent="Keys" unique_id=485688534]
-position = Vector2(64, 120)
+[node name="Down" type="Sprite2D" parent="DialogBox/Keys" unique_id=485688534]
+position = Vector2(16, 40)
 texture = ExtResource("10_radxo")
 
-[node name="E" type="Sprite2D" parent="Keys" unique_id=1998972425]
-position = Vector2(64, 48)
-texture = ExtResource("12_djl3p")
-
-[node name="Enter" type="Sprite2D" parent="Keys" unique_id=1513827825]
-position = Vector2(208, 131)
-texture = ExtResource("7_lsb8r")
-
-[node name="Esc" type="Sprite2D" parent="Keys" unique_id=850571662]
-position = Vector2(64, 144)
-texture = ExtResource("13_73805")
-
-[node name="Left" type="Sprite2D" parent="Keys" unique_id=1694447966]
-position = Vector2(96, 72)
+[node name="Left" type="Sprite2D" parent="DialogBox/Keys" unique_id=1694447966]
+position = Vector2(16, 16)
 texture = ExtResource("3_ap3ea")
 
-[node name="Right" type="Sprite2D" parent="Keys" unique_id=710849716]
-position = Vector2(112, 72)
+[node name="Right" type="Sprite2D" parent="DialogBox/Keys" unique_id=710849716]
+position = Vector2(32, 16)
 texture = ExtResource("4_t6ver")
 
-[node name="S" type="Sprite2D" parent="Keys" unique_id=1871902816]
-position = Vector2(80, 120)
-texture = ExtResource("11_1cu4j")
-
-[node name="Space" type="Sprite2D" parent="Keys" unique_id=872374554]
-position = Vector2(112, 96)
-texture = ExtResource("9_pkgwa")
-
-[node name="Up" type="Sprite2D" parent="Keys" unique_id=1786774540]
-position = Vector2(80, 96)
+[node name="Up" type="Sprite2D" parent="DialogBox/Keys" unique_id=1786774540]
+position = Vector2(16, 64)
 texture = ExtResource("7_dxsep")
 
-[node name="W" type="Sprite2D" parent="Keys" unique_id=1164630658]
-position = Vector2(64, 96)
-texture = ExtResource("8_lexqi")
+[node name="Pause" type="Sprite2D" parent="DialogBox/Keys" unique_id=1982580258]
+position = Vector2(16, 88)
+texture = ExtResource("8_0epgs")
+
+[node name="Resume" type="Sprite2D" parent="DialogBox/Keys" unique_id=248250091]
+position = Vector2(32, 88)
+texture = ExtResource("9_g2equ")
+
+[node name="Home" type="Sprite2D" parent="DialogBox/Keys" unique_id=939676974]
+position = Vector2(16, 112)
+texture = ExtResource("10_0epgs")

@@ -1,10 +1,10 @@
 extends Control
 
 @onready var hud: CanvasLayer = $".."
-@onready var coin_amount: Label = $MarginContainer/CoinContainer/CoinAmount
 @onready var time_amount: Label = $MarginContainer/TimeContainer/MarginContainer2/TimeAmount
 @onready var life_amount: Label = $MarginContainer/LifeContainer/LifeAmount
 @onready var clock_timer: Timer = $ClockTimer
+@onready var coin_amount: Label = $MarginContainer/MarginContainer/CoinContainer/CoinAmount
 
 var default_minutes = 1
 var default_seconds = 0

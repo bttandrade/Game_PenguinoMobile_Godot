@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cme3i3gd33hsa"]
 
 [ext_resource type="Script" uid="uid://bh87trb4r8u8j" path="res://scripts/chest.gd" id="1_hbcot"]
-[ext_resource type="Texture2D" uid="uid://cr66und35sg2b" path="res://assets/others/commons/Treasure_Chest (32 x 16).png" id="1_s5oot"]
+[ext_resource type="Texture2D" uid="uid://xw0f7wae1e7m" path="res://assets/others/commons/Treasure_Chest (32 x 16).png" id="1_s5oot"]
 [ext_resource type="AudioStream" uid="uid://c3qda7wb20n1e" path="res://sounds/open_chest.wav" id="3_7hlhr"]
 [ext_resource type="AudioStream" uid="uid://dtf3403tfed7x" path="res://sounds/coin_spawn.wav" id="4_x33lm"]
 
@@ -62,7 +62,7 @@ position = Vector2(0, 3)
 shape = SubResource("RectangleShape2D_2mfnb")
 
 [node name="spawn_coins" type="Marker2D" parent="." unique_id=1380314825]
-position = Vector2(0, -19)
+position = Vector2(0, -8)
 
 [node name="OpenChestSound" type="AudioStreamPlayer" parent="." unique_id=13940266]
 stream = ExtResource("3_7hlhr")

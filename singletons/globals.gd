@@ -2,7 +2,6 @@ extends Node
 
 var finished_the_game = false
 var player_coins = 0
-var player_score: int = 0
 var player_life = 6
 var player = null
 var max_jump_count = 1
@@ -27,18 +26,7 @@ func respawn_player():
 
 func restart():
 	finished_the_game = false
-	player_score = 0
 	player_coins = 0
 	player_life = 6
 	max_jump_count = 1
 	can_wall = false
-
-func portrait():
-	var window = get_window()
-	window.size = Vector2i(180, 320)
-	window.move_to_center()
-
-func landscape():
-	var window = get_window()
-	window.size = Vector2i(320, 180)
-	window.move_to_center()

@@ -1,4 +1,4 @@
-# Penguino Quest
+# Penguino Quest - Mobile
 Desenvolvido por BRENO ANDRADE
 <br>
 <br>

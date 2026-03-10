@@ -73,7 +73,6 @@ func go_to_dead_state():
 	velocity.y = -200
 	status = BlockyState.dead
 	anima.play("dead")
-	Globals.player_score += mob_value
 
 func go_to_block_state():
 	set_collision_layer_value(1, true)

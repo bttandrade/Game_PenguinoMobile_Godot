@@ -1,11 +1,11 @@
 [gd_resource type="TileSet" format=3 uid="uid://bhk6l7csfm861"]
 
-[ext_resource type="Texture2D" uid="uid://dkugoqs2u4ce1" path="res://assets/tilesets/tiles_spring/Grassland_entities (16 x 16).png" id="1_cehp0"]
-[ext_resource type="Texture2D" uid="uid://btyiwgoqb1rm2" path="res://assets/tilesets/tiles_summer/Tropics_entities (16 x 16).png" id="2_vhkx5"]
-[ext_resource type="Texture2D" uid="uid://bfjjonc04lyvu" path="res://assets/tilesets/tiles_winter/Winter_entities (16 x 16).png" id="3_l4ap7"]
-[ext_resource type="Texture2D" uid="uid://c16708gj17ggm" path="res://assets/tilesets/tiles_autumn/Autumn_entities (16 x 16).png" id="4_c1y3a"]
-[ext_resource type="Texture2D" uid="uid://chlsjsmgdhfjb" path="res://assets/universal/House (112 x 96).png" id="5_411qn"]
-[ext_resource type="Texture2D" uid="uid://bsm2iyeukkp0h" path="res://assets/universal/Flowers (16 x 16).png" id="6_cevk6"]
+[ext_resource type="Texture2D" uid="uid://dvbcww2atueb7" path="res://assets/tilesets/tiles_spring/Grassland_entities (16 x 16).png" id="1_cehp0"]
+[ext_resource type="Texture2D" uid="uid://dctetdmu24o4n" path="res://assets/tilesets/tiles_summer/Tropics_entities (16 x 16).png" id="2_vhkx5"]
+[ext_resource type="Texture2D" uid="uid://dvufo8pd1y2s8" path="res://assets/tilesets/tiles_winter/Winter_entities (16 x 16).png" id="3_l4ap7"]
+[ext_resource type="Texture2D" uid="uid://dea7deyd0l0fn" path="res://assets/tilesets/tiles_autumn/Autumn_entities (16 x 16).png" id="4_c1y3a"]
+[ext_resource type="Texture2D" uid="uid://be7k37dp2x8ig" path="res://assets/universal/House (112 x 96).png" id="5_411qn"]
+[ext_resource type="Texture2D" uid="uid://cryy30xt0pxyb" path="res://assets/universal/Flowers (16 x 16).png" id="6_cevk6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cum1x"]
 texture = ExtResource("1_cehp0")

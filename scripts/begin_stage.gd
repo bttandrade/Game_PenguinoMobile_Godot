@@ -5,7 +5,6 @@ extends Node2D
 @onready var player: CharacterBody2D = $Player
 
 func _ready() -> void:
-	Globals.landscape()
 	canvas_name.visible = true
 	player.control_lock = true
 	await get_tree().create_timer(0.5).timeout

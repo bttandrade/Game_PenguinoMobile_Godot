@@ -82,7 +82,6 @@ func go_to_dead_state():
 	remove_from_group("enemy_body")
 	status = SkeletonState.dead
 	anima.play("dead")
-	Globals.player_score += mob_value
 	velocity = Vector2.ZERO
 
 func go_to_attack_state():

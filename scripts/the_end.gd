@@ -7,6 +7,7 @@ extends Node2D
 @onready var canvas_end: CanvasLayer = $HUDs/CanvasEnd
 
 func _ready() -> void:
+	Globals.finished_the_game = true
 	penguino_3.get_node("AnimatedSprite2D").play("idle")
 	DialogManager.game_has_ended.connect(the_end)
 

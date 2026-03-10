@@ -1,9 +1,9 @@
 [gd_resource type="TileSet" format=3 uid="uid://002s23plldo"]
 
-[ext_resource type="Texture2D" uid="uid://bq35k58l17jdc" path="res://assets/tilesets/tiles_autumn/Terrain (16 x 16).png" id="1_gycty"]
-[ext_resource type="Texture2D" uid="uid://cmpo3bylm6otc" path="res://assets/tilesets/tiles_spring/Terrain (16 x 16).png" id="2_17nv1"]
-[ext_resource type="Texture2D" uid="uid://d0fky87tjlqku" path="res://assets/tilesets/tiles_summer/Terrain (16 x 16).png" id="3_xs8a4"]
-[ext_resource type="Texture2D" uid="uid://b7ut5jsly8wrk" path="res://assets/tilesets/tiles_winter/Terrain (16 x 16).png" id="4_x8j8g"]
+[ext_resource type="Texture2D" uid="uid://bw0d5rrhrbrrl" path="res://assets/tilesets/tiles_autumn/Terrain (16 x 16).png" id="1_gycty"]
+[ext_resource type="Texture2D" uid="uid://coecmkffqcueq" path="res://assets/tilesets/tiles_spring/Terrain (16 x 16).png" id="2_17nv1"]
+[ext_resource type="Texture2D" uid="uid://bdx42vb71wn2f" path="res://assets/tilesets/tiles_summer/Terrain (16 x 16).png" id="3_xs8a4"]
+[ext_resource type="Texture2D" uid="uid://dawd8henifc26" path="res://assets/tilesets/tiles_winter/Terrain (16 x 16).png" id="4_x8j8g"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bjp0k"]
 texture = ExtResource("1_gycty")

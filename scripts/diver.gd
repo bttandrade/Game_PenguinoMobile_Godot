@@ -55,7 +55,6 @@ func go_to_dead_state():
 	remove_from_group("enemy_body")
 	velocity.y = -200
 	anima.queue_free()
-	Globals.player_score += mob_value
 	status = DiverState.dead
 
 func dead_state(_delta):

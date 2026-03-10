@@ -22,6 +22,9 @@ func _ready() -> void:
 	reset_clock_timer()
 
 func _process(_delta: float) -> void:
+	if !is_inside_tree():
+		print("Node fora da árvore")
+		print_stack()
 	coin_amount.text = str("%04d" % Globals.player_coins)
 	life_amount.text = str("%02d" % Globals.player_life)
 	if minutes == 0 and seconds == 0:

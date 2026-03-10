@@ -3,16 +3,16 @@
 [ext_resource type="Script" uid="uid://tjvn86cd8fb0" path="res://scripts/bg_menu.gd" id="1_fevoj"]
 [ext_resource type="TileSet" uid="uid://cayf158ysm7dm" path="res://themes/terrain.tres" id="2_7emb1"]
 [ext_resource type="TileSet" uid="uid://bhk6l7csfm861" path="res://themes/decoration.tres" id="3_4gtbj"]
-[ext_resource type="Texture2D" uid="uid://c6upk0qfwlsq0" path="res://assets/penguino/Looking_Off (16 x 16).png" id="4_wwxgv"]
-[ext_resource type="Texture2D" uid="uid://dyw3mf06a5re0" path="res://assets/penguino/Sitting (16 x 16).png" id="5_amyhb"]
-[ext_resource type="Texture2D" uid="uid://cp1c2raowogix" path="res://assets/penguino/Standing (16 x 16).png" id="6_w4jui"]
-[ext_resource type="Texture2D" uid="uid://dhm0vc4hwdl3u" path="res://assets/penguino/Surprised (16 x 16).png" id="7_6a863"]
-[ext_resource type="Texture2D" uid="uid://cu4kv6nf0bbcp" path="res://assets/penguino/Victory_Dance (16 x 16).png" id="8_8hg27"]
-[ext_resource type="Texture2D" uid="uid://ik6hij3y237f" path="res://assets/tilesets/tiles_winter/Background/3 - Big_mountain_BG.png" id="9_jpivc"]
-[ext_resource type="Texture2D" uid="uid://4hgjlivrcl24" path="res://assets/tilesets/tiles_winter/Background/2 - Smaller_mountains.png" id="10_1buff"]
-[ext_resource type="Texture2D" uid="uid://cl3p5hjtohrfi" path="res://assets/tilesets/tiles_winter/Background/1 - Snowy_foreground_area.png" id="11_hdist"]
+[ext_resource type="Texture2D" uid="uid://dmrw7n7elnh41" path="res://assets/penguino/Looking_Off (16 x 16).png" id="4_wwxgv"]
+[ext_resource type="Texture2D" uid="uid://dlyxld0vge2xq" path="res://assets/penguino/Sitting (16 x 16).png" id="5_amyhb"]
+[ext_resource type="Texture2D" uid="uid://dtrnx416sqy3i" path="res://assets/penguino/Standing (16 x 16).png" id="6_w4jui"]
+[ext_resource type="Texture2D" uid="uid://8vtel6gwjhpt" path="res://assets/penguino/Surprised (16 x 16).png" id="7_6a863"]
+[ext_resource type="Texture2D" uid="uid://dxq2aljohjstq" path="res://assets/penguino/Victory_Dance (16 x 16).png" id="8_8hg27"]
+[ext_resource type="Texture2D" uid="uid://cm78221k0kin5" path="res://assets/tilesets/tiles_winter/Background/3 - Big_mountain_BG.png" id="9_jpivc"]
+[ext_resource type="Texture2D" uid="uid://dkjhh2v6v5c6o" path="res://assets/tilesets/tiles_winter/Background/2 - Smaller_mountains.png" id="10_1buff"]
+[ext_resource type="Texture2D" uid="uid://qx02xccrt8wi" path="res://assets/tilesets/tiles_winter/Background/1 - Snowy_foreground_area.png" id="11_hdist"]
 [ext_resource type="PackedScene" uid="uid://dhwdmxvpoxdec" path="res://entities/penguino.tscn" id="12_ho3km"]
-[ext_resource type="Texture2D" uid="uid://b7rpdvq4u5fse" path="res://assets/others/ui/Speech_Emotes (16 x 16).png" id="13_7emb1"]
+[ext_resource type="Texture2D" uid="uid://b7ij1e008o33y" path="res://assets/others/ui/Speech_Emotes (16 x 16).png" id="13_7emb1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pmfat"]
 texture = ExtResource("4_wwxgv")
@@ -158,27 +158,27 @@ centered = false
 z_index = 2
 
 [node name="Penguino" parent="Penguinos" unique_id=339245273 instance=ExtResource("12_ho3km")]
-position = Vector2(264, 128)
-rotation = 3.1415927
-scale = Vector2(1, -1)
-
-[node name="Penguino2" parent="Penguinos" unique_id=1621383647 instance=ExtResource("12_ho3km")]
 position = Vector2(240, 128)
 rotation = 3.1415927
 scale = Vector2(1, -1)
 
+[node name="Penguino2" parent="Penguinos" unique_id=1621383647 instance=ExtResource("12_ho3km")]
+position = Vector2(264, 128)
+rotation = 3.1415927
+scale = Vector2(1, -1)
+
 [node name="Penguino3" parent="Penguinos" unique_id=1852915634 instance=ExtResource("12_ho3km")]
-position = Vector2(216, 144)
+position = Vector2(32, 176)
 rotation = 3.1415927
 scale = Vector2(1, -1)
 
 [node name="Penguino4" parent="Penguinos" unique_id=59313930 instance=ExtResource("12_ho3km")]
-position = Vector2(192, 144)
+position = Vector2(56, 176)
 rotation = 3.1415927
 scale = Vector2(1, -1)
 
 [node name="Penguino5" parent="Penguinos" unique_id=1912952765 instance=ExtResource("12_ho3km")]
-position = Vector2(152, 160)
+position = Vector2(200, 144)
 rotation = 3.1415927
 scale = Vector2(-1, -1)
 
@@ -217,11 +217,12 @@ region_rect = Rect2(0, 0, 16, 16)
 
 [node name="SpeechEmotes(16X16)2" type="Sprite2D" parent="." unique_id=1608060483]
 visible = false
-position = Vector2(153, 144)
+position = Vector2(200, 128)
 texture = ExtResource("13_7emb1")
 region_enabled = true
 region_rect = Rect2(0, 0, 16, 16)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=40893313]
+active = false
 libraries/ = SubResource("AnimationLibrary_wwxgv")
 autoplay = &"talk"

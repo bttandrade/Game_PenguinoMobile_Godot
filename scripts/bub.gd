@@ -63,7 +63,6 @@ func go_to_dead_state():
 	velocity.y = -200
 	status = BubState.dead
 	anima.play("dead")
-	Globals.player_score += mob_value
 
 func apply_gravity(delta):
 	if not is_on_floor():

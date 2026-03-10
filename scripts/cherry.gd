@@ -59,7 +59,6 @@ func go_to_dead_state():
 	velocity.y = -200
 	status = CherryState.dead
 	anima.play("dead")
-	Globals.player_score += mob_value
 
 func dead_state(delta):
 	apply_gravity(delta)

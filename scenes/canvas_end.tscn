@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://ds4xunsav6qtf"]
 
 [ext_resource type="Script" uid="uid://cumg0ryomvg5" path="res://scripts/canvas_end.gd" id="1_3cdhm"]
-[ext_resource type="FontFile" uid="uid://dx4dbuk0rrfp8" path="res://assets/fonts/RevMiniPixel.ttf" id="2_ijxvd"]
+[ext_resource type="FontFile" uid="uid://cgh44tivwepl7" path="res://assets/fonts/RevMiniPixel.ttf" id="2_ijxvd"]
 [ext_resource type="StyleBox" uid="uid://drt8sv77q5u10" path="res://themes/btn_normal.tres" id="3_3qkrb"]
 [ext_resource type="StyleBox" uid="uid://d33yh4m25d6oh" path="res://themes/btn_pressed.tres" id="4_ojh1s"]
 [ext_resource type="StyleBox" uid="uid://co7ce7wvhqtff" path="res://themes/btn_hover.tres" id="5_abu6o"]
 [ext_resource type="Script" uid="uid://bjimkprrlxhhf" path="res://scripts/style_btn.gd" id="6_j5roc"]
-[ext_resource type="Texture2D" uid="uid://ck113j85up83e" path="res://assets/universal/game_over.png" id="7_fl0yr"]
+[ext_resource type="Texture2D" uid="uid://bd5q7jpeg3ew1" path="res://assets/universal/game_over.png" id="7_fl0yr"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qmaqb"]
 
@@ -73,11 +73,12 @@ text = "MENU INICIAL"
 script = ExtResource("6_j5roc")
 
 [node name="GameOverTitle" type="TextureRect" parent="." unique_id=2004014531]
-offset_left = 29.000002
-offset_top = -13.0
-offset_right = 1565.0
-offset_bottom = 1011.0
+offset_left = 30.0
+offset_top = -24.0
+offset_right = 1566.0
+offset_bottom = 1000.0
 scale = Vector2(0.15, 0.15)
+mouse_filter = 2
 texture = ExtResource("7_fl0yr")
 
 [node name="GameOverSound" type="AudioStreamPlayer" parent="." unique_id=1382054879]

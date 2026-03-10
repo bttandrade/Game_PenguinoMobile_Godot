@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://du4vxikwfh4gl"]
 
 [ext_resource type="Script" uid="uid://bds6f4dvea0ns" path="res://scripts/bub.gd" id="1_fe8vl"]
-[ext_resource type="Texture2D" uid="uid://dum8hmpkmknea" path="res://assets/mobs/bub/Running (16 x 16).png" id="1_svjyf"]
-[ext_resource type="Texture2D" uid="uid://c6quo62702ygx" path="res://assets/mobs/bub/Hurt (16 x 16).png" id="2_udwsm"]
+[ext_resource type="Texture2D" uid="uid://dt2esjbw5yg4q" path="res://assets/mobs/bub/Running (16 x 16).png" id="1_svjyf"]
+[ext_resource type="Texture2D" uid="uid://cvffdht2ib4x3" path="res://assets/mobs/bub/Hurt (16 x 16).png" id="2_udwsm"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6j750"]
 atlas = ExtResource("2_udwsm")
@@ -89,11 +89,11 @@ position = Vector2(0, 3)
 shape = SubResource("RectangleShape2D_j1om3")
 
 [node name="HitBox" type="Area2D" parent="." unique_id=1615748848 groups=["enemy_hitbox"]]
-visible = false
 collision_layer = 32
 collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox" unique_id=1609527229]
+visible = false
 position = Vector2(-2.1855695e-07, 3)
 rotation = 1.5707964
 shape = SubResource("RectangleShape2D_gvbfr")

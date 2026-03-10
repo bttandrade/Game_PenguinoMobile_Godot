@@ -73,7 +73,6 @@ func go_to_dead_state():
 		anima.play("dead")
 		hit_box.remove_from_group("enemy_hitbox")
 		remove_from_group("enemy_body")
-		Globals.player_score += mob_value
 		velocity.y = -200
 
 func apply_gravity(delta):

@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://bhnpe44owliji"]
 
 [ext_resource type="Script" uid="uid://dfe448ktkayal" path="res://scripts/sign.gd" id="1_1rpqm"]
-[ext_resource type="Texture2D" uid="uid://b7rpdvq4u5fse" path="res://assets/others/ui/Speech_Emotes (16 x 16).png" id="1_svbwx"]
+[ext_resource type="Texture2D" uid="uid://b7ij1e008o33y" path="res://assets/others/ui/Speech_Emotes (16 x 16).png" id="1_svbwx"]
+[ext_resource type="Texture2D" uid="uid://dy2yr1mact7bg" path="res://assets/others/ui/w.png" id="3_b621t"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1rpqm"]
 size = Vector2(32, 16)
@@ -20,6 +21,21 @@ collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="SignArea" unique_id=734633091]
 shape = SubResource("RectangleShape2D_1rpqm")
+
+[node name="Control" type="Control" parent="SignArea" unique_id=2123353054]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="SignArea/Control" unique_id=2013622512]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+position = Vector2(-11, -22)
+scale = Vector2(1.375, 1)
+texture_normal = ExtResource("3_b621t")
+texture_pressed = ExtResource("3_b621t")
+action = "interact"
 
 [node name="SpawnText" type="Marker2D" parent="." unique_id=510611136]
 

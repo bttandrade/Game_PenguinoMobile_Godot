@@ -4,10 +4,10 @@
 [ext_resource type="PackedScene" uid="uid://d02uq6kykqvmi" path="res://entities/hud.tscn" id="2_j07x7"]
 [ext_resource type="PackedScene" uid="uid://egyipfsffttr" path="res://scenes/canvas_pause.tscn" id="3_jv4bt"]
 [ext_resource type="PackedScene" uid="uid://b6ys34nusqhcu" path="res://scenes/canvas_name.tscn" id="4_8qpfk"]
-[ext_resource type="Texture2D" uid="uid://ik6hij3y237f" path="res://assets/tilesets/tiles_winter/Background/3 - Big_mountain_BG.png" id="5_2g1c5"]
+[ext_resource type="Texture2D" uid="uid://cm78221k0kin5" path="res://assets/tilesets/tiles_winter/Background/3 - Big_mountain_BG.png" id="5_2g1c5"]
 [ext_resource type="PackedScene" uid="uid://ds4xunsav6qtf" path="res://scenes/canvas_end.tscn" id="5_xtqv0"]
-[ext_resource type="Texture2D" uid="uid://4hgjlivrcl24" path="res://assets/tilesets/tiles_winter/Background/2 - Smaller_mountains.png" id="6_xtqv0"]
-[ext_resource type="Texture2D" uid="uid://cl3p5hjtohrfi" path="res://assets/tilesets/tiles_winter/Background/1 - Snowy_foreground_area.png" id="7_6s227"]
+[ext_resource type="Texture2D" uid="uid://dkjhh2v6v5c6o" path="res://assets/tilesets/tiles_winter/Background/2 - Smaller_mountains.png" id="6_xtqv0"]
+[ext_resource type="Texture2D" uid="uid://qx02xccrt8wi" path="res://assets/tilesets/tiles_winter/Background/1 - Snowy_foreground_area.png" id="7_6s227"]
 [ext_resource type="TileSet" uid="uid://cayf158ysm7dm" path="res://themes/terrain.tres" id="8_r0lr2"]
 [ext_resource type="TileSet" uid="uid://bhk6l7csfm861" path="res://themes/decoration.tres" id="9_hsb07"]
 [ext_resource type="TileSet" uid="uid://002s23plldo" path="res://themes/fake_terrain.tres" id="10_gehle"]
@@ -116,7 +116,8 @@ collision_layer = 0
 next_level = "winter_4"
 
 [node name="StageLimit" type="StaticBody2D" parent="StageStuff" unique_id=1245937780]
-collision_mask = 6
+collision_layer = 128
+collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StageStuff/StageLimit" unique_id=1917195831]
 position = Vector2(2, 0)

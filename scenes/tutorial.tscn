@@ -1,15 +1,15 @@
 [gd_scene format=3 uid="uid://bdwhpi6xh2nw7"]
 
-[ext_resource type="Texture2D" uid="uid://ddqo2iq2t7wcl" path="res://assets/universal/Dialog_Box(16 x 16).png" id="1_koko0"]
-[ext_resource type="FontFile" uid="uid://dx4dbuk0rrfp8" path="res://assets/fonts/RevMiniPixel.ttf" id="2_lsb8r"]
-[ext_resource type="Texture2D" uid="uid://boxm0pbakpbvr" path="res://assets/others/ui/x.png" id="2_nlqja"]
-[ext_resource type="Texture2D" uid="uid://ciugncameleia" path="res://assets/others/ui/left.png" id="3_ap3ea"]
-[ext_resource type="Texture2D" uid="uid://bo6kqqh7ycni2" path="res://assets/others/ui/right.png" id="4_t6ver"]
-[ext_resource type="Texture2D" uid="uid://k3hqeelgjqpw" path="res://assets/others/ui/up.png" id="7_dxsep"]
-[ext_resource type="Texture2D" uid="uid://c4rickhkxmiwa" path="res://assets/others/ui/pause.png" id="8_0epgs"]
-[ext_resource type="Texture2D" uid="uid://c5plkvq84osso" path="res://assets/others/ui/resume.png" id="9_g2equ"]
+[ext_resource type="Texture2D" uid="uid://c5iw5kbndviyb" path="res://assets/universal/Dialog_Box(16 x 16).png" id="1_koko0"]
+[ext_resource type="FontFile" uid="uid://cgh44tivwepl7" path="res://assets/fonts/RevMiniPixel.ttf" id="2_lsb8r"]
+[ext_resource type="Texture2D" uid="uid://jfs75yb2i37p" path="res://assets/others/ui/x.png" id="2_nlqja"]
+[ext_resource type="Texture2D" uid="uid://di5mhh5hekhvs" path="res://assets/others/ui/left.png" id="3_ap3ea"]
+[ext_resource type="Texture2D" uid="uid://dlacvpbswvd3a" path="res://assets/others/ui/right.png" id="4_t6ver"]
+[ext_resource type="Texture2D" uid="uid://ijx1ypokbs0q" path="res://assets/others/ui/up.png" id="7_dxsep"]
+[ext_resource type="Texture2D" uid="uid://dsonn871mdldx" path="res://assets/others/ui/pause.png" id="8_0epgs"]
+[ext_resource type="Texture2D" uid="uid://blwemgyd2nsda" path="res://assets/others/ui/resume.png" id="9_g2equ"]
 [ext_resource type="Texture2D" uid="uid://brsxvjd01cjys" path="res://assets/others/ui/home.png" id="10_0epgs"]
-[ext_resource type="Texture2D" uid="uid://0gy04nd0rdn" path="res://assets/others/ui/down.png" id="10_radxo"]
+[ext_resource type="Texture2D" uid="uid://1y81e3aray1" path="res://assets/others/ui/down.png" id="10_radxo"]
 
 [node name="Tutorial" type="CanvasLayer" unique_id=1583732572]
 
@@ -19,7 +19,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-mouse_filter = 2
 color = Color(0, 0, 0, 0.19607843)
 
 [node name="DialogBox" type="MarginContainer" parent="." unique_id=1291638370]

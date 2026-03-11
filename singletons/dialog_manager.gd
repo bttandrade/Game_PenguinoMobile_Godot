@@ -19,6 +19,8 @@ func _process(_delta: float) -> void:
 		if current_line >= message_lines.size() and Globals.finished_the_game:
 			current_line = 0
 			var canvas_end = get_tree().current_scene.get_node("HUDs").get_node("CanvasEnd")
+			var hud = get_tree().current_scene.get_node("HUDs").get_node("HUD")
+			hud.visible = false
 			canvas_end.visible = true
 			emit_signal("game_has_ended")
 			return

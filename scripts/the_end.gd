@@ -5,9 +5,12 @@ extends Node2D
 @onready var stop: Area2D = $StageStuff/Stop
 @onready var audio: AudioStreamPlayer = $HUDs/AudioStreamPlayer
 @onready var canvas_end: CanvasLayer = $HUDs/CanvasEnd
+@onready var hud: CanvasLayer = $HUDs/HUD
 
 func _ready() -> void:
 	Globals.finished_the_game = true
+	hud.get_node("HUDManager").get_node("Control3").visible = false
+	hud.get_node("HUDManager").get_node("MarginContainer").visible = false
 	penguino_3.get_node("AnimatedSprite2D").play("idle")
 	DialogManager.game_has_ended.connect(the_end)
 

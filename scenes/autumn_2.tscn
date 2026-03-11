@@ -5,11 +5,11 @@
 [ext_resource type="PackedScene" uid="uid://egyipfsffttr" path="res://scenes/canvas_pause.tscn" id="3_ufun6"]
 [ext_resource type="PackedScene" uid="uid://b6ys34nusqhcu" path="res://scenes/canvas_name.tscn" id="4_6bsrp"]
 [ext_resource type="PackedScene" uid="uid://ds4xunsav6qtf" path="res://scenes/canvas_end.tscn" id="5_glu21"]
-[ext_resource type="Texture2D" uid="uid://drb6s3bnonndi" path="res://assets/tilesets/tiles_autumn/Background/6 - Distant_trees.png" id="5_v1pee"]
-[ext_resource type="Texture2D" uid="uid://dr82fotshqxou" path="res://assets/tilesets/tiles_autumn/Background/5 - Tree_row_BG_2.png" id="6_50rd5"]
-[ext_resource type="Texture2D" uid="uid://dtng2h8wpihd" path="res://assets/tilesets/tiles_autumn/Background/4 - Tree_row_BG_1.png" id="7_25xur"]
-[ext_resource type="Texture2D" uid="uid://cx4ne4vw7wvj8" path="res://assets/tilesets/tiles_autumn/Background/3 - Bottom_leaf_piles.png" id="8_62x6b"]
-[ext_resource type="Texture2D" uid="uid://cs3oaxcrq8xph" path="res://assets/tilesets/tiles_autumn/Background/2 - Trees.png" id="9_kchrk"]
+[ext_resource type="Texture2D" uid="uid://b2j1opys51coa" path="res://assets/tilesets/tiles_autumn/Background/6 - Distant_trees.png" id="5_v1pee"]
+[ext_resource type="Texture2D" uid="uid://cywmwtod8yl7f" path="res://assets/tilesets/tiles_autumn/Background/5 - Tree_row_BG_2.png" id="6_50rd5"]
+[ext_resource type="Texture2D" uid="uid://cv6qil8w55qjq" path="res://assets/tilesets/tiles_autumn/Background/4 - Tree_row_BG_1.png" id="7_25xur"]
+[ext_resource type="Texture2D" uid="uid://b1aidhai3y2eo" path="res://assets/tilesets/tiles_autumn/Background/3 - Bottom_leaf_piles.png" id="8_62x6b"]
+[ext_resource type="Texture2D" uid="uid://co67np6aphcju" path="res://assets/tilesets/tiles_autumn/Background/2 - Trees.png" id="9_kchrk"]
 [ext_resource type="TileSet" uid="uid://cayf158ysm7dm" path="res://themes/terrain.tres" id="10_xcpnx"]
 [ext_resource type="TileSet" uid="uid://bhk6l7csfm861" path="res://themes/decoration.tres" id="11_gv7d4"]
 [ext_resource type="TileSet" uid="uid://002s23plldo" path="res://themes/fake_terrain.tres" id="12_x80yn"]
@@ -130,7 +130,8 @@ collision_layer = 0
 next_level = "autumn_3"
 
 [node name="StageLimit" type="StaticBody2D" parent="StageStuff" unique_id=1245937780]
-collision_mask = 6
+collision_layer = 128
+collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StageStuff/StageLimit" unique_id=1917195831]
 position = Vector2(2, 0)

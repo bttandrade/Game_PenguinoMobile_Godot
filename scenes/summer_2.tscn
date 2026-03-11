@@ -5,16 +5,16 @@
 [ext_resource type="PackedScene" uid="uid://egyipfsffttr" path="res://scenes/canvas_pause.tscn" id="3_7g20e"]
 [ext_resource type="PackedScene" uid="uid://b6ys34nusqhcu" path="res://scenes/canvas_name.tscn" id="4_11f2h"]
 [ext_resource type="PackedScene" uid="uid://ds4xunsav6qtf" path="res://scenes/canvas_end.tscn" id="5_0timw"]
-[ext_resource type="Texture2D" uid="uid://30jwv2yg63r2" path="res://assets/tilesets/tiles_spring/Background/5 - Sky_color.png" id="5_aad4g"]
-[ext_resource type="Texture2D" uid="uid://bscxegee57ucj" path="res://assets/tilesets/tiles_summer/Background/4 - Background_clouds.png" id="6_juvru"]
+[ext_resource type="Texture2D" uid="uid://y00uyiltxge" path="res://assets/tilesets/tiles_spring/Background/5 - Sky_color.png" id="5_aad4g"]
+[ext_resource type="Texture2D" uid="uid://iboh6l0i3g1h" path="res://assets/tilesets/tiles_summer/Background/4 - Background_clouds.png" id="6_juvru"]
 [ext_resource type="Script" uid="uid://dc4kep7bytbpt" path="res://scripts/clouds.gd" id="7_j5vg1"]
-[ext_resource type="Texture2D" uid="uid://dguctl2vjd4yi" path="res://assets/tilesets/tiles_summer/Background/3 - Floating_clouds.png" id="8_0timw"]
-[ext_resource type="Texture2D" uid="uid://fip6itl03y6y" path="res://assets/tilesets/tiles_summer/Background/2 - Waters_version_2.png" id="9_03gni"]
-[ext_resource type="Texture2D" uid="uid://clmt6wtupiota" path="res://assets/tilesets/tiles_summer/Background/1 - Waters_version_1.png" id="10_kwj12"]
+[ext_resource type="Texture2D" uid="uid://cwkog1hyaoqu0" path="res://assets/tilesets/tiles_summer/Background/3 - Floating_clouds.png" id="8_0timw"]
+[ext_resource type="Texture2D" uid="uid://c2tcm2tnasn70" path="res://assets/tilesets/tiles_summer/Background/2 - Waters_version_2.png" id="9_03gni"]
+[ext_resource type="Texture2D" uid="uid://cu6qrwiv6d25q" path="res://assets/tilesets/tiles_summer/Background/1 - Waters_version_1.png" id="10_kwj12"]
 [ext_resource type="TileSet" uid="uid://cayf158ysm7dm" path="res://themes/terrain.tres" id="11_mb20y"]
 [ext_resource type="TileSet" uid="uid://bhk6l7csfm861" path="res://themes/decoration.tres" id="12_perhu"]
-[ext_resource type="Texture2D" uid="uid://btyiwgoqb1rm2" path="res://assets/tilesets/tiles_summer/Tropics_entities (16 x 16).png" id="13_aydf5"]
-[ext_resource type="Texture2D" uid="uid://d4mpturf6ehb7" path="res://assets/universal/Lava_frames (16 x 32).png" id="14_p5iye"]
+[ext_resource type="Texture2D" uid="uid://dctetdmu24o4n" path="res://assets/tilesets/tiles_summer/Tropics_entities (16 x 16).png" id="13_aydf5"]
+[ext_resource type="Texture2D" uid="uid://b7cylhk12dmf0" path="res://assets/universal/Lava_frames (16 x 32).png" id="14_p5iye"]
 [ext_resource type="PackedScene" uid="uid://wekgtfrjcvyb" path="res://entities/falling_plataform.tscn" id="15_7wtyq"]
 [ext_resource type="PackedScene" uid="uid://ixkd0ix4ffnl" path="res://entities/stage_end.tscn" id="15_k5ou2"]
 [ext_resource type="PackedScene" uid="uid://bhnpe44owliji" path="res://entities/sign.tscn" id="16_ngs7l"]
@@ -191,7 +191,8 @@ collision_layer = 0
 next_level = "summer_3"
 
 [node name="StageLimit" type="StaticBody2D" parent="StageStuff" unique_id=1245937780]
-collision_mask = 6
+collision_layer = 128
+collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StageStuff/StageLimit" unique_id=1917195831]
 position = Vector2(2, 0)

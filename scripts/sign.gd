@@ -21,7 +21,7 @@ func _process(_delta: float) -> void:
 			lines = [
 			"Bem-vindo de volta Penguino!",
 			"Sei que teve uma aventura e tanto ao retornar.",
-			"Mas vamos ver quanto as moedas que trouxe!",
+			"Mas vamos ver quantas moedas trouxe!",
 			coin_line, coin_line2, coin_line3, 
 			". . . E que tal começar nos contando tudo sobre sua aventura?"]
 		DialogManager.start_message(spawn_place.global_position, lines)

@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://cqij4plb5w4ip"]
 
 [ext_resource type="Script" uid="uid://chu062c1u0lww" path="res://scripts/credits.gd" id="1_ccovl"]
-[ext_resource type="Texture2D" uid="uid://ddqo2iq2t7wcl" path="res://assets/universal/Dialog_Box(16 x 16).png" id="1_gryuy"]
-[ext_resource type="FontFile" uid="uid://dx4dbuk0rrfp8" path="res://assets/fonts/RevMiniPixel.ttf" id="2_ccovl"]
-[ext_resource type="Texture2D" uid="uid://boxm0pbakpbvr" path="res://assets/others/ui/x.png" id="5_8gwij"]
+[ext_resource type="Texture2D" uid="uid://c5iw5kbndviyb" path="res://assets/universal/Dialog_Box(16 x 16).png" id="1_gryuy"]
+[ext_resource type="FontFile" uid="uid://cgh44tivwepl7" path="res://assets/fonts/RevMiniPixel.ttf" id="2_ccovl"]
+[ext_resource type="Texture2D" uid="uid://jfs75yb2i37p" path="res://assets/others/ui/x.png" id="5_8gwij"]
 
 [node name="Credits" type="CanvasLayer" unique_id=1583732572]
 script = ExtResource("1_ccovl")
@@ -14,7 +14,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-mouse_filter = 2
 color = Color(0, 0, 0, 0.19607843)
 
 [node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=2015232254]

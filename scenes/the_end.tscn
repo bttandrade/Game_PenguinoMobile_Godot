@@ -4,6 +4,7 @@
 [ext_resource type="TileSet" uid="uid://cayf158ysm7dm" path="res://themes/terrain.tres" id="2_747u8"]
 [ext_resource type="TileSet" uid="uid://bhk6l7csfm861" path="res://themes/decoration.tres" id="3_w54tb"]
 [ext_resource type="PackedScene" uid="uid://ds4xunsav6qtf" path="res://scenes/canvas_end.tscn" id="4_0mcgf"]
+[ext_resource type="PackedScene" uid="uid://d02uq6kykqvmi" path="res://entities/hud.tscn" id="6_13cxm"]
 [ext_resource type="Texture2D" uid="uid://cm78221k0kin5" path="res://assets/tilesets/tiles_winter/Background/3 - Big_mountain_BG.png" id="9_1e6nl"]
 [ext_resource type="Texture2D" uid="uid://dkjhh2v6v5c6o" path="res://assets/tilesets/tiles_winter/Background/2 - Smaller_mountains.png" id="10_3amem"]
 [ext_resource type="Texture2D" uid="uid://qx02xccrt8wi" path="res://assets/tilesets/tiles_winter/Background/1 - Snowy_foreground_area.png" id="11_w6d5j"]
@@ -26,6 +27,7 @@ size = Vector2(167, 8)
 script = ExtResource("1_y7v6c")
 
 [node name="HUDs" type="Node2D" parent="." unique_id=92897801]
+position = Vector2(0, -16)
 
 [node name="PauseMenu" parent="HUDs" unique_id=2075938879 instance=ExtResource("14_bm7cq")]
 visible = false
@@ -39,6 +41,10 @@ stage_number = "FINAL"
 process_mode = 3
 visible = false
 
+[node name="HUD" parent="HUDs" unique_id=1318826501 instance=ExtResource("6_13cxm")]
+default_minutes = 3
+default_seconds = 59
+
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="HUDs" unique_id=621506506]
 process_mode = 3
 stream = ExtResource("18_w54tb")
@@ -47,6 +53,7 @@ autoplay = true
 
 [node name="Parallax" type="Node2D" parent="." unique_id=123921197]
 z_index = -10
+position = Vector2(0, -16)
 
 [node name="3" type="Parallax2D" parent="Parallax" unique_id=1926493760]
 scroll_scale = Vector2(0.1, 0.1)
@@ -73,6 +80,7 @@ texture = ExtResource("11_w6d5j")
 centered = false
 
 [node name="Layers" type="Node2D" parent="." unique_id=1271265947]
+position = Vector2(0, -16)
 
 [node name="Terrain" type="TileMapLayer" parent="Layers" unique_id=2135161151]
 z_index = 1
@@ -93,9 +101,11 @@ tile_map_data = PackedByteArray("AAAAAA0AAQAMAAYAAAAAAA4AAQAMAAYAAAABAA0AAQAMAAY
 tile_set = ExtResource("3_w54tb")
 
 [node name="StageStuff" type="Node2D" parent="." unique_id=640001210]
+position = Vector2(0, -16)
 
 [node name="StageLimit" type="StaticBody2D" parent="StageStuff" unique_id=1267464881]
-collision_mask = 6
+collision_layer = 128
+collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StageStuff/StageLimit" unique_id=1790823778]
 position = Vector2(2, 0)
@@ -109,8 +119,11 @@ lines = Array[String](["Bem vindo de volta Penguino", "Imagino que tenha ", "Sua
 [node name="Sprite2D" parent="StageStuff/Sign" index="0" unique_id=1665358468]
 position = Vector2(69, -47)
 
+[node name="TouchScreenButton" parent="StageStuff/Sign/SignArea/Control" parent_id_path=PackedInt32Array(788242226, 2123353054) index="0" unique_id=2013622512]
+position = Vector2(58, -53)
+
 [node name="SpawnText" parent="StageStuff/Sign" index="2" unique_id=510611136]
-position = Vector2(40, -24)
+position = Vector2(40, -31)
 
 [node name="Stop" type="Area2D" parent="StageStuff" unique_id=1141378332]
 collision_layer = 0
@@ -122,6 +135,7 @@ rotation = -1.5707964
 shape = SubResource("RectangleShape2D_g5hsy")
 
 [node name="Mobs" type="Node2D" parent="." unique_id=1577863937]
+position = Vector2(0, -16)
 
 [node name="Penguino" parent="Mobs" unique_id=339245273 instance=ExtResource("16_d1ocr")]
 position = Vector2(344, 144)
@@ -170,12 +184,11 @@ rotation = 3.1415927
 scale = Vector2(1, -1)
 
 [node name="Player" parent="." unique_id=976081242 instance=ExtResource("12_bbfaa")]
-position = Vector2(56, 176)
+position = Vector2(56, 160)
 
 [node name="Camera2D" parent="." unique_id=2033492168 instance=ExtResource("13_le5mv")]
 position = Vector2(144, 112)
 limit_top = -9999989
-limit_bottom = 217
 
 [connection signal="finished" from="HUDs/AudioStreamPlayer" to="." method="_on_audio_stream_player_finished"]
 [connection signal="body_entered" from="StageStuff/Stop" to="." method="_on_stop_body_entered"]
